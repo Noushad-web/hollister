@@ -1,0 +1,45 @@
+// font 
+@import url('https://fonts.googleapis.com/css2?family=Stylish&family=Varta:wght@300;400;500;600;700&display=swap');
+
+// variable
+@import './partials/variable';
+// components
+@import './partials/navbar';
+@import './partials/hero';
+@import './partials/footer.scss';
+@import './partials/annoucement';
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Varta',
+  sans-serif;
+  // font-family: 'Stylish',
+  // sans-serif;  
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+pt-15 {
+  padding-top: 15px;
+}
+
+pb-15 {
+  padding-bottom: 15px;
+}
+
+.container {
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+}

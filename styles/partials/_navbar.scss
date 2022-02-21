@@ -1,0 +1,21 @@
+.navbar {  
+  color: $primary;
+  padding: 0 1rem;
+  // box-shadow: 0 2px 5px $light;
+
+  &__heading {
+    display: inline-block;
+  }
+
+  &__item {
+    text-transform: capitalize;
+    padding: 15px ;
+
+    &__wrapper {
+      display: inline-flex;
+      list-style: none;
+      gap: 1rem;
+    }
+  }
+
+}
