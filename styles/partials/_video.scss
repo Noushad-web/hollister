@@ -1,0 +1,30 @@
+.video {
+
+  &__wrapper {
+    position: relative;
+  }
+
+  &__figure {
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%, -50%);
+
+    figcaption {
+      font-family: Source Sans,
+      sans-serif;
+      font-size: 1.2rem;
+      text-align: center;
+      color: white;
+      max-width: 80%;
+      margin: auto;
+    }
+  }
+
+  &__btns {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1rem;
+  } 
+}
