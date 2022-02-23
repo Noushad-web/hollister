@@ -29,6 +29,8 @@ a {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: 'Varta',
+  sans-serif;
 }
 
 pt-15 {
@@ -43,4 +45,8 @@ pb-15 {
   max-width: 1400px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.button__wrapper>*+* {
+  margin-left: 1rem;
 }

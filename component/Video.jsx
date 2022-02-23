@@ -36,6 +36,7 @@ const Video = () => {
               color={'white'}
               bgColor={'transparent'}
               href={'/shop/guys'}
+              rounded
             >
               Shop Guys
             </ButtonCustom>
@@ -44,6 +45,7 @@ const Video = () => {
               color={'white'}
               bgColor={'transparent'}
               href={'/shop/girls'}
+              rounded
             >
               Shop Girls
             </ButtonCustom>
