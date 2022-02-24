@@ -88,3 +88,16 @@ export default function Home() {
     </Layout>
   )
 }
+
+
+export async function getStaticProps() {
+  await db.connect();
+  const shops = await shop.find({}).lean();
+  await db.disconnect();
+
+  return {
+    props: {
+      shops: shops.map(db.convertDocToObj),
+    },
+  };
+}
