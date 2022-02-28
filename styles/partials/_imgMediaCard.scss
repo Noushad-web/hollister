@@ -1,0 +1,50 @@
+.card {
+  margin-top: 2rem;
+ 
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+  
+  &__figure {
+    max-width: 400px;
+    max-height: 500px;
+    position: relative;
+    transition: all .2s ease;
+
+    &:hover figcaption {
+      opacity: 1;
+      transform: translateY(-100%);
+    }
+
+    &:hover img {
+      filter: brightness(70%);
+    }
+
+    & figcaption {
+      display: flex;
+      justify-content: space-evenly;
+      padding: 0;
+      position: absolute;
+      width: 100%;
+      bottom: 0;
+      transform: translateY(0%);
+      transition: all .3s ease;
+      opacity: 0;
+    }
+  }
+
+  &__content {
+    
+    & h4 {
+      color: lighten($dark, $amount: 30%);
+      text-transform: capitalize;
+    }
+
+    & h2 {
+      // color: lighten($color: #000000, $amount: 30%);
+      color: $primary;
+    }
+  }
+}

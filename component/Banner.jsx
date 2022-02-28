@@ -21,7 +21,7 @@ const Banner = ({ bgImg, heading, description, articleAlign, button }) => {
 
           <div className="button__wrapper" style={{ marginTop: '2rem' }}>
             {
-              button.map((eachButton, index) => {
+              button?.map((eachButton, index) => {
                 return <ButtonCustom
                   key={index}
                   color={'#1c2121'}
