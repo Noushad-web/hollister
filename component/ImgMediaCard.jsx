@@ -23,12 +23,10 @@ export default function ImgMediaCard({ product, linkBaseUrl }) {
     stock
   } = product;
 
-  console.log(name);
-
   return (
     <>
       {product && (
-        <div className="card">
+        <div className="card" id={id}>
           <div className="card__header"></div>
           <figure className="card__figure">
             <Link href={`${linkBaseUrl}/${slug}`}>
@@ -69,8 +67,10 @@ export default function ImgMediaCard({ product, linkBaseUrl }) {
             </figcaption>
           </figure>
           <div className="card__content">
-            <h4 className="card__heading">{getHeading(product.name)}</h4>
-            <h2 className="card__price">{`$${product.price}`}</h2>
+            <h4 className="card__heading">{getHeading(name)}</h4> <small className='card__brand'>
+              Brand - {brand}
+              </small>
+            <h2 className="card__price">{`$${price}`}</h2>
           </div>
         </div>
       )}

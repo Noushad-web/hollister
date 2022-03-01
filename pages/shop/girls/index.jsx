@@ -8,8 +8,6 @@ import bannerImg from '../../../public/girls/hco-HP-D-20220224-DadJeans-VintageJ
 import ImgMediaCard from '../../../component/ImgMediaCard';
 
 const Girls = ({ data }) => {
-
-
   return (
     <Layout>
       <Annoucement>

@@ -46,5 +46,10 @@
       // color: lighten($color: #000000, $amount: 30%);
       color: $primary;
     }
+
+    & small {
+      color: $primary;
+      text-transform: capitalize;
+    }
   }
 }
