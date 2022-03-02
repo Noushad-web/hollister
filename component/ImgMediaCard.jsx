@@ -1,14 +1,9 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import img from '../public/girls/curvy/curvy-high-rise-brown-jeans.webp'
 import ButtonCustom from './Button';
 
 export default function ImgMediaCard({ product, linkBaseUrl }) {
-
-  // console.log('====================================');
-  // console.log(product);
-  // console.log('====================================');
 
   const {
     brand,

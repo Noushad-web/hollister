@@ -8,7 +8,7 @@ const src = "https://img.hollisterco.com/is/content/anf/22_SPR_HCO_JeansBrand_10
 const Video = () => {
 
   return (
-    <div className='video__wrapper'>
+    <section className='video__wrapper'>
       <video
         width="100%"
         loop
@@ -52,7 +52,7 @@ const Video = () => {
           </div>
         </figcaption>
       </figure>
-    </div>
+    </section>
 
   )
 }

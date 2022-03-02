@@ -51,3 +51,22 @@ pb-15 {
 .button__wrapper>*+* {
   margin-left: 1rem;
 }
+
+.single-product {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  color: lighten($color: #000000, $amount: 20%);
+
+  h2 {
+    text-transform: capitalize;
+  }
+
+  & a {
+    max-width: max-content;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}

@@ -2,8 +2,8 @@ import React from 'react'
 import Layout from '../../../component/Layout';
 import { Container } from '@mui/material'
 import Grid from '@mui/material/Grid';
-import Image from 'next/image';
 import ReactImageZoom from 'react-image-zoom';
+import ButtonCustom from '../../../component/Button';
 
 const Slug = ({ data }) => {
 
@@ -21,11 +21,21 @@ const Slug = ({ data }) => {
   } = data;
 
   const props = {
-    width: 400, height: 500, zoomWidth: 500, img: image, offset:
-    {
+    width: 400, height: 500, zoomWidth: 500, img: image,
+    offset: {
       "vertical": 0,
-      "horizontal": -150    }
+      "horizontal": -150
+    }
   };
+
+  const stars = [
+    '★',
+    '★★',
+    '★★★',
+    '★★★★',
+    '★★★★★'
+  ]
+
   return (
     <Layout>
       <Container sx={{ margin: '3rem auto' }}>
@@ -33,18 +43,27 @@ const Slug = ({ data }) => {
           <Grid xs={6}>
             <figure >
               <ReactImageZoom {...props} />
-              {/* <Image
-                src={image}
-                alt={name}
-                width='100%'
-                height='100%'
-                layout="responsive"
-                objectFit='cover' 
-              /> */}
             </figure>
           </Grid>
-          <Grid h2 xs={6}>
-            <h2>xs=4</h2>
+          <Grid xs={6} className='single-product'>
+            <h2>{name}</h2>
+            <p><i>Brand - {brand}</i>
+              &nbsp; &nbsp;<span>{stars[rating]}</span>
+            </p>
+            <h1>&#36;{price} </h1>
+            <i style={{color: 'darkred'}}>{!stock ? 'Out of Stock' : 'In Stock'}</i>
+            <p>{description}</p>
+
+            {stock && <ButtonCustom
+              color={'#1c2121'}
+              bgColor={'transparent'}
+              href={'#'}
+              rounded
+              hoverColor='white'
+              fontSize="15px"
+            >
+              Buy Now
+            </ButtonCustom>}
           </Grid>
         </Grid>
       </Container>

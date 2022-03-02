@@ -2,9 +2,9 @@ import React from 'react'
 
 const Annoucement = ({children}) => {
   return (
-    <div className='annoucement'>
+    <section className='annoucement'>
       {children}
-    </div>
+    </section>
   )
 }
 

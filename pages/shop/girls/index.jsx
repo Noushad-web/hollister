@@ -52,7 +52,7 @@ these stand out. `}
         button={button1}
       />
 
-      <Container className='card__wrapper'>
+      <Container className='card__wrapper' id="girls-new-arrival">
         {data.products.map((eachData) => {
           return <ImgMediaCard product={eachData} linkBaseUrl={'/shop/girls'} key={eachData.id}/>
         })}
@@ -65,12 +65,12 @@ export default Girls
 
 const button1 = [
   {
-    text: 'Curvy High Rise',
-    url: '/shop/girls/curvy-hight-rise'
+    text: 'Curvy Rise Dark',
+    url: '/shop/girls/curvy-mid-rise-dark-wash'
   },
   {
-    text: 'Curvy Ultra High',
-    url: '/shop/girls/curvy-ultra-high'
+    text: 'High Rise Black',
+    url: '/shop/girls/high-rise-wash-black'
   }
 ]
 

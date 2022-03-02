@@ -33,7 +33,6 @@ const button2 = [
   }
 ]
 export default function Home() {
-  console.log(banner1)
   return (
     <Layout>
       <Annoucement>

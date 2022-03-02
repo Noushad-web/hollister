@@ -11,7 +11,7 @@ const ButtonCustom = (
     children,
     rounded,
     fontSize,
-    style
+    style,
    }) => {
 
   return (
