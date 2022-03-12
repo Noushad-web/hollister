@@ -2,7 +2,7 @@ import React from 'react'
 import Layout from '../../../component/Layout';
 import { Container } from '@mui/material'
 import Grid from '@mui/material/Grid';
-import ReactImageZoom from 'react-image-zoom';
+import Image from 'next/image';
 import ButtonCustom from '../../../component/Button';
 
 const Slug = ({ data }) => {
@@ -42,7 +42,9 @@ const Slug = ({ data }) => {
         <Grid container spacing={2} >
           <Grid xs={6}>
             <figure >
-              <ReactImageZoom {...props} />
+              {/* <ReactImageZoom {...props} /> */}
+              <Image src={image} width="400" height="500" />
+
             </figure>
           </Grid>
           <Grid xs={6} className='single-product'>

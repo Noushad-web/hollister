@@ -2,7 +2,7 @@ import { Container } from '@mui/material'
 import Link from 'next/link'
 import React from 'react'
 
-const navItems = ['girls', 'guys', 'jeans', 'sale', 'about-us']
+const navItems = ['girls', 'guys']
 
 const Header = () => {
   return (
@@ -10,6 +10,11 @@ const Header = () => {
       <Container sx={{display: 'flex', alignItems: 'center', justifyContent: 'space-between'}}>
         <h2 className='navbar__heading'><Link href={'/'}>Hollister</Link></h2>
         <ul className='navbar__item__wrapper'>
+          <li className='navbar__item'>
+            <Link href={`/`}>
+              Home
+            </Link>
+          </li>
           {
             navItems.map((eachItem, index) => {
               return (
@@ -21,6 +26,8 @@ const Header = () => {
               )
             })
           }
+
+
         </ul>
       </Container>
     </header>
